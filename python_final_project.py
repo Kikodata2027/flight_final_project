@@ -580,6 +580,12 @@ df_after_drop = df_after_drop.drop(columns=['SECURITY_DELAY'])
 df_after_drop = df_after_drop.drop(columns=['AIRLINE_DELAY'])
 df_after_drop = df_after_drop.drop(columns=['LATE_AIRCRAFT_DELAY'])
 df_after_drop = df_after_drop.drop(columns=['WEATHER_DELAY'])
+df_after_drop = df_after_drop.drop(columns=['ARRIVAL_TIME'])
+df_after_drop = df_after_drop.drop(columns=['SCHEDULED_DEPARTURE'])
+df_after_drop = df_after_drop.drop(columns=['DEPARTURE_TIME'])
+df_after_drop = df_after_drop.drop(columns=['SCHEDULED_TIME'])
+df_after_drop = df_after_drop.drop(columns=['SCHEDULED_ARRIVAL'])
+
 
 n=df_after_drop.isnull().sum()
 
